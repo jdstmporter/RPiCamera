@@ -1,0 +1,4 @@
+# Need to create a system user picam in groups picam, audio, video, i2c
+
+useradd --system picam
+usermod -a -G audio,video,i2c 

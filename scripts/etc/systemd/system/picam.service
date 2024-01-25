@@ -1,0 +1,15 @@
+[Unit]
+Description=Raspberry Pi camera module MediaMTX rtsp streamer
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/picam
+Type=exec
+User=picam
+Group=picam
+Restart=always
+
+[Install]
+WantedBy=network.target
+
+
